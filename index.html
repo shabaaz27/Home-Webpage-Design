@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="sec">
+      <header>
+         <a href="#">
+             <img src="logo.png" class="logo">
+            </a>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">What's New</a></li>
+                  <li><a href="#">Newletter</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+         
+      </header>
+
+      <div class="content">
+          <div class="textBox">
+              <h2>That What<br><span>am Looking for</span></h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, 
+                  consequuntur! Explicabo iure recusandae delectus. 
+                  Expedita, inventore illum impedit repellendus 
+                  fugiat excepturi praesentium amet ex
+                   cum at deserunt eos sequi mollitia.</p>
+               <a href="#">View All Products</a>
+          </div>
+              <div class="imgBox">
+                  <img src="pepsi001.png" alt="pepsi" class="pepsi">
+              </div>
+      </div>
+      <ul class="thumb">
+           <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png'); changeBgColor('#0062be');" alt="pepsi001"></li>
+           <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png'); changeBgColor('#e60c2c');" alt="pepsi002"></li>
+           <li><img src="pepsi003.png"  onclick="imgSlider('pepsi003.png'); changeBgColor('#1e1e1e');" alt="pepsi003"></li>
+      </ul>
+      <ul class="sci">
+       <li><a href="#"><img src="facebook.png" alt="facebook"></a></li>
+       <li><a href="#"><img src="instagram.png" alt="instagram"></a></li>
+       <li><a href="#"><img src="twitter.png" alt="twitter"></a></li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+
+    function imgSlider(anything){
+        document.querySelector('.pepsi').src = anything;
+    }
+    function changeBgColor(color){
+    const scolor = document.querySelector('.sec');
+    scolor.style.background = color;
+   
+}
+    </script>
+</body>
+</html>
